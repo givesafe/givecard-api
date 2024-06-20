@@ -1,6 +1,6 @@
 # GivecardApi
 
-This gem is an API wrapper for (GiiveCard API)[https://givecard-platform-dev.web.app/].
+This gem is an API wrapper for (GiveCard API)[https://givecard-platform-dev.web.app/].
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/givecard_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
