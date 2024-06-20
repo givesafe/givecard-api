@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["nick@samaritan.city"]
 
   spec.summary = "GiveCard SDK for Ruby"
-  spec.description = "The official SDK for the GiveCard API, containing interface implemenatations and error handling for working with it."
+  spec.description = "The official SDK for the GiveCard API."
   spec.homepage = "https://givecard-platform-dev.web.app/"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
