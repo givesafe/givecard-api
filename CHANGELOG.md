@@ -43,3 +43,7 @@
 ## [0.4.7] - 2024-06-21
 
 - using programId in request
+
+## [0.4.8] - 2024-06-21
+
+- fixing handle response

@@ -60,7 +60,7 @@ module GivecardApi
             Struct.new(:code, :body).new(code, body)
         end
 
-        def self.handle_response(response)
+        def handle_response(response)
             case response.code
             when 200..299
                 response
