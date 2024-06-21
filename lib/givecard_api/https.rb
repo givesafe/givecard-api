@@ -14,7 +14,7 @@ module GivecardApi
         end
 
         def call(_method, endpoint, payload = {}, headers = {})
-            headers = default_headers.merge(headers)
+            headers = self.class.default_headers.merge(headers)
             url = "#{@url}/#{endpoint}"
 
             response = RestClient.send(_method, url, payload.to_json, headers)

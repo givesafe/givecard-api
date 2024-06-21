@@ -15,3 +15,7 @@
 ## [0.4.0] - 2024-06-21
 
 - changing https call to instance method
+
+## [0.4.1] - 2024-06-21
+
+- fixing https bug
