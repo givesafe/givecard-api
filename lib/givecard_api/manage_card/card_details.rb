@@ -4,7 +4,8 @@ module GivecardApi
             def self.call(card_id = '')
                 _path = "cards/#{card_id}/details"
 
-                GivecardApi::Https.call(:post, _path)
+                https_instance = GivecardApi::Https.new
+                https_instance.call(:get, _path)
             end
         end
     end

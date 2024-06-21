@@ -13,7 +13,7 @@ module GivecardApi
             @url = determine_base_url
         end
 
-        def self.call(_method, endpoint, payload = {}, headers = {})
+        def call(_method, endpoint, payload = {}, headers = {})
             headers = default_headers.merge(headers)
             url = "#{@url}/#{endpoint}"
 

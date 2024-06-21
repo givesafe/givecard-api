@@ -11,3 +11,7 @@
 ## [0.3.0] - 2024-06-21
 
 - logger fix
+
+## [0.4.0] - 2024-06-21
+
+- changing https call to instance method

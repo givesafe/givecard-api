@@ -5,7 +5,9 @@ module GivecardApi
                 _path = "cards"
                 _params = { programId: program_id }
 
-                GivecardApi::Https.call(:post, _path, _params)
+                instance = GivecardApi::Https.new
+                https_instance = GivecardApi::Https.new
+                instance.call(:get, _path, _params)
             end
         end
     end
