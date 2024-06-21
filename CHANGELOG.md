@@ -7,3 +7,7 @@
 ## [0.2.0] - 2024-06-21
 
 - set up GivecardApi, GivecardApi.configuration uses env variables
+
+## [0.3.0] - 2024-06-21
+
+- logger fix
