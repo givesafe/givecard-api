@@ -33,21 +33,22 @@ module GivecardApi
             respond_with(500, e.message)
         end
 
-        def respond_with(code, body)
-            Struct.new(:code, :body).new(code, body)
-        end
-
+        
         private
-
+        
         def self.default_headers
             { Authorization: "Bearer #{GivecardApi.configuration.api_token}", content_type: :json, accept: :json }
         end
-
+        
         def determine_base_url
             mode = GivecardApi.configuration.givecard_api_mode || 'sandbox'
             mode.downcase == 'live' ? API_URL : SANDBOX_API_URL
         end
-
+        
+        def respond_with(code, body)
+            Struct.new(:code, :body).new(code, body)
+        end
+        
         def self.handle_response(response)
             case response.code
             when 200..299

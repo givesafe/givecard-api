@@ -23,3 +23,7 @@
 ## [0.4.2] - 2024-06-21
 
 - fixing https.rb bug
+
+## [0.4.3] - 2024-06-21
+
+- moving respond_with method to private
