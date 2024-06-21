@@ -33,7 +33,7 @@ module GivecardApi
             respond_with(500, e.message)
         end
 
-        def self.respond_with(code, body)
+        def respond_with(code, body)
             Struct.new(:code, :body).new(code, body)
         end
 
