@@ -3,7 +3,8 @@
 require_relative "givecard_api/version"
 require_relative "givecard_api/https"
 require_relative "givecard_api/configuration"
-require_relative "givecard_api/reporting/get_cards.rb"
+require_relative "givecard_api/reporting/get_cards"
+require_relative "givecard_api/manage_card/card_details"
 
 module GivecardApi
   class Error < StandardError; end
