@@ -31,3 +31,7 @@
 ## [0.4.4] - 2024-06-21
 
 - using args in request
+
+## [0.4.5] - 2024-06-21
+
+- logger test

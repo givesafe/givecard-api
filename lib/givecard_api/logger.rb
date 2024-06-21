@@ -1,6 +1,9 @@
 module GivecardApi
     class Logger
       def self.log(message)
+        puts "is_disabled?"
+        puts is_disabled?
+        puts "---------"
         return if is_disabled?
         
         puts message
