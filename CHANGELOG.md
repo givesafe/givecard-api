@@ -39,3 +39,7 @@
 ## [0.4.6] - 2024-06-21
 
 - get cards requst fix
+
+## [0.4.7] - 2024-06-21
+
+- using programId in request
