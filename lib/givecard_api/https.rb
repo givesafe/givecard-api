@@ -19,9 +19,14 @@ module GivecardApi
             _headers = self.class.default_headers.merge(headers)
 
             args = [_path]
-            # args.push(_params) if [:post, :put].include?(_method)
-            args.push(_params)
+            if [:post, :put].include?(_method)
+                _params = payload.to_json
+                args.push(_params)
+            end
             args.push(_headers)
+
+            puts "Method: #{_method}"
+            puts "Args: #{args}"
 
             response = RestClient.send(_method, *args)
             handle_response(response)

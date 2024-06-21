@@ -2,12 +2,9 @@ module GivecardApi
     module Reporting
         class GetCards
             def self.call(program_id = '')
-                _path = "cards"
-                _params = { programId: program_id }
-
-                instance = GivecardApi::Https.new
+                _path = "cards?programID=#{program_id}"
                 https_instance = GivecardApi::Https.new
-                instance.call(:get, _path, _params)
+                https_instance.call(:get, _path)
             end
         end
     end

@@ -35,3 +35,7 @@
 ## [0.4.5] - 2024-06-21
 
 - logger test
+
+## [0.4.6] - 2024-06-21
+
+- get cards requst fix
