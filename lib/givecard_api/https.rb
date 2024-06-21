@@ -53,7 +53,7 @@ module GivecardApi
             when 200..299
                 response
             else
-                GivecardApi::Logger.error("Request failed with response code: #{response.code}")
+                GivecardApi::Logger.log("Request failed with response code: #{response.code}")
                 respond_with(response.code, response.body)
             end
         end
