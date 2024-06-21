@@ -27,3 +27,7 @@
 ## [0.4.3] - 2024-06-21
 
 - moving respond_with method to private
+
+## [0.4.4] - 2024-06-21
+
+- using args in request

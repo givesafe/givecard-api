@@ -14,22 +14,28 @@ module GivecardApi
         end
 
         def call(_method, endpoint, payload = {}, headers = {})
-            headers = self.class.default_headers.merge(headers)
-            url = "#{@url}/#{endpoint}"
+            _path = "#{@url}/#{endpoint}"
+            _params = payload.to_json
+            _headers = self.class.default_headers.merge(headers)
 
-            response = RestClient.send(_method, url, payload.to_json, headers)
+            args = [_path]
+            # args.push(_params) if [:post, :put].include?(_method)
+            args.push(_params)
+            args.push(_headers)
+
+            response = RestClient.send(_method, *args)
             handle_response(response)
         rescue RestClient::ExceptionWithResponse => e
-            GivecardApi::Logger.log("API call to #{url} failed with response: #{e.response}")
+            GivecardApi::Logger.log("API call to #{_path} failed with response: #{e.response}")
             respond_with(e.response.code, e.response.body)
         rescue RestClient::Unauthorized => e
-            GivecardApi::Logger.log("Unauthorized API call to #{url}: #{e.response.body}")
+            GivecardApi::Logger.log("Unauthorized API call to #{_path}: #{e.response.body}")
             respond_with(401, e.response.body)
         rescue RestClient::ServiceUnavailable => e
-            GivecardApi::Logger.log("Service unavailable for API call to #{url}: #{e.response.body}")
+            GivecardApi::Logger.log("Service unavailable for API call to #{_path}: #{e.response.body}")
             respond_with(503, e.response.body)
         rescue StandardError => e
-            GivecardApi::Logger.log("API call to #{url} failed with error: #{e.message}")
+            GivecardApi::Logger.log("API call to #{_path} failed with error: #{e.message}")
             respond_with(500, e.message)
         end
 
@@ -48,7 +54,7 @@ module GivecardApi
         def respond_with(code, body)
             Struct.new(:code, :body).new(code, body)
         end
-        
+
         def self.handle_response(response)
             case response.code
             when 200..299
