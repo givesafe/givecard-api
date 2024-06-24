@@ -67,3 +67,7 @@
 ## [0.5.4] - 2024-06-24
 
 - params string fix
+
+## [0.5.5] - 2024-06-24
+
+- fixing set pin params
