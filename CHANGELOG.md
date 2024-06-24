@@ -51,3 +51,7 @@
 ## [0.5.0] - 2024-06-24
 
 - adding set pin
+
+## [0.5.1] - 2024-06-24
+
+- fixing https.rb payload bug and adding proper logging

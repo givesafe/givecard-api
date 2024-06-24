@@ -15,18 +15,20 @@ module GivecardApi
 
         def call(_method, endpoint, payload = {}, headers = {})
             _path = "#{@url}/#{endpoint}"
-            _params = payload.to_json
             _headers = self.class.default_headers.merge(headers)
-
+            
             args = [_path]
             if [:post, :put].include?(_method)
                 _params = payload.to_json
                 args.push(_params)
             end
             args.push(_headers)
-
-            puts "Method: #{_method}"
-            puts "Args: #{args}"
+            
+            ::GivecardApi::Logger.log "GivecardApi method: #{_method}"
+            ::GivecardApi::Logger.log "GivecardApi path: #{_path}"
+            ::GivecardApi::Logger.log "GivecardApi params: #{_params}"
+            ::GivecardApi::Logger.log "GivecardApi headers: #{_headers}"
+            ::GivecardApi::Logger.log "GivecardApi *args: #{*args}"
 
             response = RestClient.send(_method, *args)
             handle_response(response)
