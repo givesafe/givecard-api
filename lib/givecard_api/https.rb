@@ -19,7 +19,7 @@ module GivecardApi
             
             args = [_path]
             if [:post, :put].include?(_method)
-                _params = payload.to_json
+                _params = payload.is_a?(String) ? payload : payload.to_json
                 args.push(_params)
             end
             args.push(_headers)
