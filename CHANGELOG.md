@@ -47,3 +47,7 @@
 ## [0.4.8] - 2024-06-21
 
 - fixing handle response
+
+## [0.5.0] - 2024-06-24
+
+- adding set pin

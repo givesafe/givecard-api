@@ -5,6 +5,7 @@ require_relative "givecard_api/https"
 require_relative "givecard_api/configuration"
 require_relative "givecard_api/reporting/get_cards"
 require_relative "givecard_api/manage_card/card_details"
+require_relative "givecard_api/manage_card/set_pin"
 
 module GivecardApi
   class Error < StandardError; end
