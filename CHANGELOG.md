@@ -55,3 +55,7 @@
 ## [0.5.1] - 2024-06-24
 
 - fixing https.rb payload bug and adding proper logging
+
+## [0.5.2] - 2024-06-24
+
+- log fix

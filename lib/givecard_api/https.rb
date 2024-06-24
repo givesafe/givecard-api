@@ -28,7 +28,6 @@ module GivecardApi
             ::GivecardApi::Logger.log "GivecardApi path: #{_path}"
             ::GivecardApi::Logger.log "GivecardApi params: #{_params}"
             ::GivecardApi::Logger.log "GivecardApi headers: #{_headers}"
-            ::GivecardApi::Logger.log "GivecardApi *args: #{*args}"
 
             response = RestClient.send(_method, *args)
             handle_response(response)
