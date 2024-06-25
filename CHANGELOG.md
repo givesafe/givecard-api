@@ -71,3 +71,7 @@
 ## [0.5.5] - 2024-06-24
 
 - fixing set pin params
+
+## [0.6.0] - 2024-06-25
+
+- adding load card
