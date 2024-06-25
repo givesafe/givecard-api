@@ -76,6 +76,10 @@
 
 - adding load card
 
-## [0.6.0] - 2024-06-25
+## [0.6.1] - 2024-06-25
 
 - including route in GivecardApi
+
+## [0.6.2] - 2024-06-25
+
+- fixing payload for load card
