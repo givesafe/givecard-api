@@ -87,3 +87,7 @@
 ## [0.7.0] - 2024-06-25
 
 - adding get programs
+
+## [0.8.0] - 2024-06-25
+
+- adding get fund account balance
