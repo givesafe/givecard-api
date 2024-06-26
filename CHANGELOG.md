@@ -91,3 +91,7 @@
 ## [0.8.0] - 2024-06-25
 
 - adding get fund account balance
+
+## [0.8.1] - 2024-06-25
+
+- adding new routes
