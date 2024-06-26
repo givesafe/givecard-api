@@ -83,3 +83,7 @@
 ## [0.6.2] - 2024-06-25
 
 - fixing payload for load card
+
+## [0.7.0] - 2024-06-25
+
+- adding get programs
