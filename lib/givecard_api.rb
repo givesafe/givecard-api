@@ -7,6 +7,8 @@ require_relative "givecard_api/card_loads_transfers/load_card"
 require_relative "givecard_api/funding_account/get_fund_account_balance"
 require_relative "givecard_api/reporting/get_cards"
 require_relative "givecard_api/manage_card/card_details"
+require_relative "givecard_api/manage_card/card_load_history.rb"
+require_relative "givecard_api/manage_card/card_transactions.rb"
 require_relative "givecard_api/manage_card/set_pin"
 require_relative "givecard_api/superbusiness/get_programs"
 

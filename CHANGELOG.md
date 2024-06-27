@@ -96,6 +96,6 @@
 
 - adding new routes
 
-## [0.8.2] - 2024-06-25
+## [0.9.0] - 2024-06-25
 
-- fixing file names
+- card load history and transactions
