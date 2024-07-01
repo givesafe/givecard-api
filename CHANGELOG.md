@@ -103,3 +103,7 @@
 ## [0.10.0] - 2024-06-25
 
 - close card and card to card transfer
+
+## [0.10.1] - 2024-06-25
+
+- syntax error
