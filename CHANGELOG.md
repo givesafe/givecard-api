@@ -99,3 +99,7 @@
 ## [0.9.0] - 2024-06-25
 
 - card load history and transactions
+
+## [0.10.0] - 2024-06-25
+
+- close card and card to card transfer
