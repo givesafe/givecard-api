@@ -11,6 +11,7 @@ require_relative "givecard_api/manage_card/card_details"
 require_relative "givecard_api/manage_card/card_load_history"
 require_relative "givecard_api/manage_card/card_transactions"
 require_relative "givecard_api/manage_card/close_card"
+require_relative "givecard_api/manage_card/reassociate_card"
 require_relative "givecard_api/manage_card/set_pin"
 require_relative "givecard_api/superbusiness/get_programs"
 
