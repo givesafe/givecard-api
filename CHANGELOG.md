@@ -111,3 +111,7 @@
 ## [0.11.0] - 2024-07-10
 
 - reassociate card
+
+## [0.12.0] - 2024-07-10
+
+- fixing load and transaction naming
