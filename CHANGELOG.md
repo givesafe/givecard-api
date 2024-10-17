@@ -119,3 +119,7 @@
 ## [0.13.0] - 2024-07-10
 
 - adding get card balance
+
+## [0.14.0] - 2024-07-10
+
+- adding transfer between funding accounts
