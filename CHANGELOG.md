@@ -120,6 +120,14 @@
 
 - adding get card balance
 
-## [0.14.0] - 2024-07-10
+## [0.14.0] - 2024-10-20
 
 - adding transfer between funding accounts
+
+## [0.15.0] - 2024-10-21
+
+- changing to correct prod givecard url
+
+## [0.15.1] - 2024-10-21
+
+- fixing prod url

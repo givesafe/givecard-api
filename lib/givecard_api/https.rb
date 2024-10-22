@@ -5,7 +5,7 @@ require_relative 'configuration'
 module GivecardApi
     class Https
         # need to get correct API URL
-        API_URL = 'https://api.production.givecard.xyz'.freeze
+        API_URL = 'https://api.production.givecard.xyz/api/v1'.freeze
         SANDBOX_API_URL = 'https://api.dev.givecard.dev/api/v1'.freeze        
 
         def initialize
