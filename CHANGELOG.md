@@ -131,3 +131,7 @@
 ## [0.15.1] - 2024-10-21
 
 - fixing prod url
+
+## [0.16.0] - 2024-10-28
+
+- adding tags to cards
