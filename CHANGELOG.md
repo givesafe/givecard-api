@@ -135,3 +135,7 @@
 ## [0.16.0] - 2024-10-28
 
 - adding tags to cards
+
+## [0.17.0] - 2025-01-31
+
+- issue virtual card
