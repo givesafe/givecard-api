@@ -151,3 +151,7 @@
 ## [0.20.0] - 2025-08-19
 
 - withdraw funds from card
+
+## [0.20.1] - 2025-08-19
+
+- including Body Params in withdraw funds request
