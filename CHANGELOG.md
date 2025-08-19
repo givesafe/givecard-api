@@ -139,3 +139,7 @@
 ## [0.17.0] - 2025-01-31
 
 - issue virtual card
+
+## [0.18.0] - 2025-01-31
+
+- unfreeze card
