@@ -140,10 +140,14 @@
 
 - issue virtual card
 
-## [0.18.0] - 2025-01-31
+## [0.18.0] - 2025-08-19
 
 - unfreeze card
 
-## [0.19.0] - 2025-01-31
+## [0.19.0] - 2025-08-19
 
 - freeze card
+
+## [0.20.0] - 2025-08-19
+
+- withdraw funds from card

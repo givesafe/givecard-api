@@ -18,6 +18,7 @@ require_relative "givecard_api/manage_card/reassociate_card"
 require_relative "givecard_api/manage_card/set_pin"
 require_relative "givecard_api/manage_card/unfreeze_card"
 require_relative "givecard_api/manage_card/freeze_card"
+require_relative "givecard_api/manage_card/withdraw_funds"
 require_relative "givecard_api/order_cards/issue_virtual_card"
 require_relative "givecard_api/superbusiness/get_programs"
 
