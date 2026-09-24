@@ -155,3 +155,7 @@
 ## [0.20.1] - 2025-08-19
 
 - including Body Params in withdraw funds request
+
+## [0.21.0] - 2026-09-24
+
+- lock and unlock card
